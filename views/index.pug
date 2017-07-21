@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+	head
+		title URL-Shortener-ms API
+		link(rel='stylesheet', href='/static/stylesheets/style.css')
+	body
+		header
+			h1 FreeCodeCamp Project: URL-Shortener-Microservice API
+				a(href='https://github.com/anfelo/url-shortener', target='_blank') -(GitHub)
+		section.main-wrapper
+			.description
+				h2 Description:
+				p Blah Blah Blah
+			.instructions
+				h2 Instructions:
+				ol
+					li Pass a string as a parameter to the URL, the paramenter should be a unix timestamp or a human readable date (See Examples).
+					li If the string passed is valid, the API returns a json object with a "unix" time property and a "natural" date property.
+					li If the string passed is NOT valid, the API returns a null value for each of the properties of the json object.
+			.examples
+				h2 Examples:
+				p https://anfelo-timestamp-ms.glitch.me/January%2018,%201991
+				p https://anfelo-timestamp-ms.glitch.me/664156800000
+				h2 Output:
+				p { "unix": 664156800000, "natural": "January 18, 1991" }
+		footer
+			p &copy;2017 by anfelo
